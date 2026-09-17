@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.instanceOf;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -148,5 +149,7 @@ public class MainTest {
         assertEquals(results.get(0), "a");
         assertEquals(results.get(results.size()-1), "wrote");
 
+
     }
 }
+

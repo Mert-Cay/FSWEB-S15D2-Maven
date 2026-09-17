@@ -14,7 +14,7 @@ Proje sayımız ilerledikçe proje yönetimimizi kolaylaştırmak adına projele
  * org.example.entity paketi altında İki tane sınıfımız olucak. ```Task``` ve ```TaskData```
  * ```Task``` sınıfı içerisinde 5 tane ```instance variable``` olmalı. ```project``` => string ```description``` => string ```assignee``` => string
  * ```priority``` org.example.entity paketi altında Priority şeklinde bir Enum tipinde olmalı. Priority{HIGH, MED, LOW} şeklinde oluşturabilirsiniz.
- * ```status``` org.example.entity paketi altında Status şeklinde bir Enum tipinde olmalı. Status{IN_QUEUE, ASSIGNED, IN_PROGRESS} şeklinde oluşturabilirsiniz.
+ * ```status``` org.example.entity paketi altında Status şeklinde bir Enum tipinde olmalı. Status{}IN_QUEUE, ASSIGNED, IN_PROGRESS şeklinde oluşturabilirsiniz.
  * Task'ın eşsizliğini ```project``` ve ```description``` değerleri birlikte belirler.
  * TaskData sınıfı 4 tane değişkene sahip olmalı  ```annsTasks => Set<Task>```   ```bobsTasks => Set<Task>```  ```carolsTasks => Set<Task>``` ```unassignedTasks => Set<Task>``` Bu 4 değerde constructor vasıtasıyla set edilebilmeli.
  * TaskData sınıfı ```getTasks()``` adlı bir metoda sahip olmalı. method parametre olarak bir String almalı. Bu 4 değerden herhangi birini alabilir. ("ann", "bob", "carol", "all") Metodun dönüş değeri ```Set<Task>``` olmalı.
